@@ -1,0 +1,143 @@
+html{
+    height: 100%;
+    width: auto;
+}
+
+body{
+    background: linear-gradient(#f8f8f8, #afb6fc);
+    background-repeat: no-repeat;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    padding: 10px 0;
+}
+
+form{
+    width: 600px;
+    max-width: 800px;
+    margin: 50px 100px;
+}
+
+.input-texto{
+    background: transparent;
+    color: #0A3871;
+    font-size: 2rem;
+    outline:none;
+
+}
+
+.input-texto::placeholder{
+    color: #0A3871;
+    font-size: 2rem;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 110px;
+    top: 600px;
+}
+
+.encriptar{
+
+    font-size: 1.5rem;
+    background: #0A3871;
+    color: white;
+    border-radius: 24px;
+    width: 228px;
+    height: 67px;
+    cursor: pointer;
+
+}
+
+.desencriptar{
+    font-size: 1.5rem;
+    background: #D8DFE8;
+    color: #0A3871;
+    border-radius: 24px;
+    width: 228px;
+    height: 67px;
+    cursor: pointer;
+}
+
+.encriptar:hover{
+    transform: scale(1.1);
+    
+}
+
+.desencriptar:hover{
+    transform: scale(1.1);
+    
+}
+
+.resultado{
+    position: absolute;
+    width: 400px;
+    height: 650px;
+    left: 900px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.imagen{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 35px;
+    top: 103px;
+}
+
+.texto-resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 32px;
+    top: 440px;
+}
+
+.texto-resultado h3{
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 120%;
+    text-align: center;
+
+    color: #343A40;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.texto-resultado p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
