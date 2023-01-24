@@ -19,24 +19,26 @@
     </header>
 
     <main>
-        <form class="form">
+        <div class="form">
+            <label for="mensaje"></label>
             <textarea cols="40" rows="10" id="mensaje" class="input-texto" style="border:none" placeholder="Ingrese el texto aquí" required></textarea>
             
             <div class="botones">
-                <input type="submit" value="Encriptar" class="encriptar">
-                <input type="submit" value="Desencriptar" class="desencriptar">
+                <input type="submit" value="Encriptar" class="encriptar" id="encriptar">
+                <input type="submit" value="Desencriptar" class="desencriptar" id="desencriptar">
             </div>
             
-        </form>
-
-        <div class="resultado">
-            <img class="imagen" src="assets/Muñeco.png" alt="imagen-de-muestra">
-            <div class="texto-resultado">
-                <h3>Ningún mensaje fue encontrado</h3>
-                <p>Ingrese el texto que desees encriptar o desencriptar</p>
-            </div>
         </div>
 
+        <div class="resultado">
+            <div id="resultado"> 
+                <img class="imagen" id="imagen" src="assets/Muñeco.png" alt="imagen-de-muestra">
+                <div class="texto-resultado">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <p>Ingrese el texto que desees encriptar o desencriptar</p>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -45,5 +47,7 @@
 
     </footer>
 
+    <script src="/js/main.js"></script>
 </body>
 </html>
+
